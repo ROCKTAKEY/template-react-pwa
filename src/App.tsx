@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import './i18n';
 import { Button } from '@mui/material';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [t, i18next] = useTranslation();
-  const [language, setLanguage] = useState(i18next.language);
+  const [t, i18n] = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
   useEffect(() => {
-    i18next.changeLanguage(language);
-  }, [language, i18next]);
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   const src = 'src/App.tsx';
 
