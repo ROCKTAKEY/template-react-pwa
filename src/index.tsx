@@ -6,6 +6,12 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
+if (process.env.NODE_ENV !== 'development') {
+  console.log = () => {};
+  console.warn = () => {};
+  console.error = () => {};
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
