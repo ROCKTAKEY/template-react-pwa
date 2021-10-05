@@ -28,3 +28,8 @@ This package use these extends:
 because codes created by `create-react-app` break these rules.
 In addition, these rules, espacially `no-param-reassign.props` and `no-console`, seem to restrict our
 coding too much.
+
+# license
+Note that this package is NOT licensed by AGPLv3. The LICENSE file is just a part of template.
+This template is public domain except part of `create-react-app`. You can remove the AGPLv3 LICENSE file
+when you use.
