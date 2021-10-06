@@ -12,7 +12,7 @@
 4. Commit `package-lock.json` and `package.json`.
 5. Now Github Actions workflow should be successful and your repository is ready. Enjoy!
 
-Note that this template will send coverage report to Codecov. so you can see coverage report in codecov.io
+Note that this template will send coverage report to Codecov. so you can see coverage report in [codecov.io](Codecov)
 if you have signed up it.
 
 # Details
