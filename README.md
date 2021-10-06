@@ -12,6 +12,9 @@
 4. Commit `package-lock.json` and `package.json`.
 5. Now Github Actions workflow should be successful and your repository is ready. Enjoy!
 
+Note that this template will send coverage report to Codecov. so you can see coverage report in codecov.io
+if you have signed up it.
+
 # Details
 This package is created by `npx create-react-app . --template=cra-template-pwa-typescript`.
 
