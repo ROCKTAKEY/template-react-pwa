@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
-import { Button } from '@mui/material';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { useTranslation, Trans } from "react-i18next";
+import { Button } from "@mui/material";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   const [t, i18n] = useTranslation();
@@ -11,7 +11,7 @@ function App() {
     i18n.changeLanguage(language);
   }, [language, i18n]);
 
-  const src = 'src/App.tsx';
+  const src = "src/App.tsx";
 
   return (
     <div className="App">
@@ -19,11 +19,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <Trans i18nKey="EditSrcAndSaveToReload">
-            Edit
-            {' '}
-            <code>{{ src }}</code>
-            {' '}
-            and save to reload.
+            Edit <code>{{ src }}</code> and save to reload.
           </Trans>
         </p>
         <a
@@ -32,13 +28,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t('LearnReact')}
+          {t("LearnReact")}
         </a>
         <Button
           variant="contained"
           name="language"
           onClick={() => {
-            setLanguage((lang) => (lang === 'ja' ? 'en' : 'ja'));
+            setLanguage((lang) => (lang === "ja" ? "en" : "ja"));
           }}
         >
           toggle language
