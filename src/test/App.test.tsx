@@ -1,10 +1,11 @@
+import "./mock/matchMedia.mock";
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
-import App from "./App";
+import App from "../App";
 
-import enTranslation from "./locales/en/translation.json";
+import enTranslation from "../locales/en/translation.json";
 
 i18n.use(initReactI18next).init({
   resources: {
