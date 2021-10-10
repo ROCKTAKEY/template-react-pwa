@@ -42,7 +42,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "eslint": "eslint src --ext .tsx,.json,.html",
-    "stylelint": "stylelint src"
+    "stylelint": "stylelint src",
+    "prettier": "prettier src"
   },
   "browserslist": {
     "production": [
